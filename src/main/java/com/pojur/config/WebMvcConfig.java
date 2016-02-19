@@ -20,7 +20,9 @@ import org.springframework.web.servlet.view.tiles3.TilesView;
  */
 @EnableWebMvc
 @Configuration
+//@ComponentScan({"com.pojur.config", "com.pojur.controller"})
 @ComponentScan("com.pojur.controller")
+//@ComponentScan(basePackages = {"com.pojur"})
 public class WebMvcConfig extends WebMvcConfigurerAdapter {
     
     @Bean

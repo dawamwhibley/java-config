@@ -1,0 +1,2 @@
+persistence.xml {/src/main/resource/META-INF}
+glassfish-resources.xml {/src/main/webapp/WEB-INF}
