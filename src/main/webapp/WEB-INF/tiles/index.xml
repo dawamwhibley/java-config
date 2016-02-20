@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tiles-definitions PUBLIC
-"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
-"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+   "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+   "jndi:/localhost/myapp/WEB-INF/dtd/tiles-config_3_0.dtd">
 <tiles-definitions>
-    <definition name="default" template="/WEB-INF/views/index.jsp">
+    
+    <definition name="default" template="/WEB-INF/template/template.jsp">
+        <put-attribute name="title" value="Gaea System" />
+        <!--<put-attribute name="body" value="/WEB-INF/views/newjsp.jsp" />-->
+    </definition>
+    
+<!--    <definition name="default" template="/WEB-INF/views/index.jsp">
         <put-attribute name="title" value="Gaea System" />
         <put-attribute name="body" value="/WEB-INF/views/newjsp.jsp" />
-    </definition>
+    </definition>-->
     
 <!--    <definition name="calendar" extends="default">
         <put-attribute name="title" value="Hotel calendar | Gaea System" />
